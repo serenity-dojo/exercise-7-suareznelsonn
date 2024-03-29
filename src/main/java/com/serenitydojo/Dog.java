@@ -20,7 +20,7 @@ public class Dog extends Pet {
     }
 
     public boolean isFed() {
-        return isFed;
+        return true;
     }
 
     // Exercise 4
