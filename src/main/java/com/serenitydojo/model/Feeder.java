@@ -1,14 +1,21 @@
 package com.serenitydojo.model;
 
+import static com.serenitydojo.model.FoodType.TUNA;
+import static com.serenitydojo.model.FoodType.SALMON;
+import static com.serenitydojo.model.FoodType.DOG_FOOD;
+import static com.serenitydojo.model.FoodType.DELUXE_DOG_FOOD;
+import static com.serenitydojo.model.FoodType.CABBAGE;
+import static com.serenitydojo.model.FoodType.LETTUCE;
+
 public class Feeder {
-    public String feeds(String animal, boolean isPremium) {
+    public FoodType feeds(String animal, boolean isPremium) {
         if (animal.equals("Cat")) {
-            return (isPremium) ? "Salmon" : "Tuna";
+            return (isPremium) ? SALMON : TUNA;
         } else if (animal.equals("Dog")) {
-            return "Dog Food";
+            return DOG_FOOD;
         }
 
-        return "Cabbage";
+        return CABBAGE;
 
     }
 }
